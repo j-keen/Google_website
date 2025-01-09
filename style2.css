@@ -1,0 +1,162 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #202124; 
+    overflow-x: hidden; /* 가로 스크롤바 방지 */
+  }
+  
+  /* 상단 네비게이션 바 */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.6); /* 반투명 배경 */
+    backdrop-filter: blur(6px);        /* 유리 효과 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 999;
+  }
+  
+  /* 네비게이션 텍스트 링크 */
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #000; /* hover 시 살짝 진해짐 */
+  }
+  
+  /* 네비게이션 아이콘 */
+  .navbar i {
+    margin: 0 8px;               
+    cursor: pointer;
+    color: #666;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .navbar i:hover {
+    transform: scale(1.2);
+    color: #111;
+  }
+  
+  /* 구글 로고 */
+  .google-logo {
+    margin: 150px 0 20px;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  /* 로고에 살짝 애니메이션 주기 */
+  .google-logo:hover {
+    transform: scale(1.05) rotate(2deg);
+  }
+  
+  /* 검색창 */
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(223, 225, 229, 0.8);
+    border-radius: 24px;
+    width: 500px;
+    margin: 0 auto 20px;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 3px 12px rgba(32, 33, 36, 0.28);
+    backdrop-filter: blur(8px); /* 유리효과 */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .search:hover {
+    box-shadow: 0 4px 14px rgba(32, 33, 36, 0.35);
+    transform: scale(1.01);
+  }
+  
+  /* 검색창 내부 아이콘 */
+  .search i {
+    margin: 0 8px;               
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .search i:hover {
+    color: #000;
+  }
+  
+  /* 텍스트 입력 */
+  .input-style {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+    margin: 0 10px;
+    color: #202124;
+  }
+  
+  /* 버튼 */
+  .button-style {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e6e6e6 100%);
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button-style:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f3f4 100%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* 푸터 */
+  .footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+    backdrop-filter: blur(6px);
+    color: #3c4043;  
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* 대한민국 표시 영역 */
+  .korea {
+    text-align: left;
+    padding: 15px 20px;
+    border-bottom: 1px solid #dadce0;
+    font-weight: 500;
+  }
+  
+  /* 푸터 링크 컨테이너 */
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+  
+  /* 푸터 링크 */
+  .footer a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-size: 14px;
+    transition: color 0.2s ease;
+  }
+  
+  .footer a:hover {
+    color: #000;
+  }
+  
